@@ -14,7 +14,7 @@
 
 .card {
     width: calc(25.33% - 16px);
-    background-color: #FF6068;
+    background: linear-gradient(to bottom, #FF6068, rgb(197, 56, 63));
     border-radius: 10px;
     height: 334px;
     padding: 16px;
@@ -36,5 +36,10 @@ p {
     font-family: 'Montserrat';
     font-weight: 500;
     color: white;
-    padding: 0px
+    padding: 0px;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
 }

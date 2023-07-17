@@ -20,4 +20,13 @@
     font-weight: 500;
     font-size: 24px;
     color: #FF6060;
+
+    a {
+        color: #FF6068;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #FF6068;
+    }
 }

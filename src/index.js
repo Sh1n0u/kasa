@@ -6,6 +6,7 @@ import Footer from './components/footer/footer.jsx';
 import Accueil from './pages/accueil.jsx';
 import Apropos from './pages/apropos.jsx';
 import Error from './components/error/error.jsx';
+import CardDetails from './components/carddetails/carddetail.jsx';
 
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
                 <Route exact path='/' element={<Accueil />} />
                 <Route path='/apropos' element={<Apropos />} />
                 <Route path='*' element={<Error />} />
+                <Route path="/content/:id" component={CardDetails} />
             </Routes>
             <Footer />
         </Router>
