@@ -1,0 +1,29 @@
+.accordion {
+  .accordion-header {
+    cursor: pointer;
+    /* Ajoutez ici les styles de l'en-tête de l'accordion */
+  }
+
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+
+    p {
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+
+  &.open {
+    .accordion-content {
+      max-height: 500px; /* Ajustez la hauteur maximale souhaitée */
+      transition: max-height 0.3s ease-in-out;
+
+      p {
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+      }
+    }
+  }
+}

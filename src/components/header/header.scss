@@ -1,0 +1,23 @@
+.header {
+    margin: auto;
+    padding: 20px 50px 20px 50px;
+    align-items: center;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar {
+    width: 309px;
+    height: 34px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+    color: #FF6060;
+}

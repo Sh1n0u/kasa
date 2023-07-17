@@ -1,0 +1,29 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 223px;
+    width: 100%;
+    margin-bottom: 20px;
+
+
+    img {
+        width: 95%;
+        height: 100%;
+        border-radius: 25px;
+        filter: brightness(0.7);
+        object-fit: cover;
+    }
+
+    p {
+        position: absolute;
+        top: 23%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 48px;
+        font-family: 'Montserrat';
+        text-align: center;
+      }
+}

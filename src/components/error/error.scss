@@ -1,0 +1,23 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FF6069;
+    font-family: 'Montserrat';
+
+    h2 {
+        margin: 0px;
+        font-size: 288px;
+        font-weight: 700;
+
+    }
+
+    p {
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    img {
+        width: 300px;
+    }
+}
