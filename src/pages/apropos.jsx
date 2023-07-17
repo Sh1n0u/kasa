@@ -1,4 +1,5 @@
 import Banner from "../components/banner/banner"
+import Accordion from '../components/accordion/accordion'
 
 function Apropos() {
     const currentPage = 'apropos'
@@ -6,6 +7,7 @@ function Apropos() {
     return (
         <div>
             <Banner currentPage={currentPage} />
+            <Accordion />
         </div>
     )
 }

@@ -7,6 +7,7 @@ import Accueil from './pages/accueil.jsx';
 import Apropos from './pages/apropos.jsx';
 import Error from './components/error/error.jsx';
 
+
 ReactDOM.render(
     <React.StrictMode>
         <Router>
