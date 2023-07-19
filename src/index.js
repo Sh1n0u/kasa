@@ -8,7 +8,6 @@ import Apropos from './pages/apropos.jsx';
 import Error from './components/error/error.jsx';
 import CardDetails from './components/carddetails/carddetail.jsx';
 
-
 ReactDOM.render(
     <React.StrictMode>
         <Router>
@@ -17,10 +16,10 @@ ReactDOM.render(
                 <Route exact path='/' element={<Accueil />} />
                 <Route path='/apropos' element={<Apropos />} />
                 <Route path='*' element={<Error />} />
-                <Route path="/content/:id" component={CardDetails} />
+                <Route path="/content/:id" element={<CardDetails />} />
             </Routes>
             <Footer />
         </Router>
     </React.StrictMode>,
-  document.getElementById('root')
+    document.getElementById('root')
 );

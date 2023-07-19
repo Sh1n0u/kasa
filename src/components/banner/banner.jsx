@@ -1,22 +1,11 @@
 import React from 'react'
-import bannerAccueil from '../../assets/banneraccueil.png'
-import bannerApropos from '../../assets/bannerapropos.png'
 import './banner.scss'
 
-function Banner({ currentPage }) {
-    let image;
-    let text;
-
-    if (currentPage === 'accueil') {
-        image = bannerAccueil;
-        text = 'Chez vous, partout et ailleurs'
-    } else if (currentPage === 'apropos') {
-        image = bannerApropos;
-    }
+function Banner({ img, text }) {
 
     return (
         <div className='banner'>
-            <img src={image} alt="Bannière de page" />
+            <img src={img} alt="Bannière de page" />
             <p>{text}</p>
         </div>
     )

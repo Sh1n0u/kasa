@@ -1,9 +1,9 @@
 import Banner from "../components/banner/banner"
-import Accordion from '../components/accordion/accordion'
+import Accordions from '../components/accordion/accordions'
 import React, { useEffect } from 'react'
+import bannerApropos from '../assets/bannerapropos.png'
 
 function Apropos() {
-    const currentPage = 'apropos'
 
     useEffect(() => {
         document.title = "A propos";
@@ -11,8 +11,8 @@ function Apropos() {
 
     return (
         <div>
-            <Banner currentPage={currentPage} />
-            <Accordion />
+            <Banner img={bannerApropos} />
+            <Accordions />
         </div>
     )
 }
