@@ -18,10 +18,10 @@ function Carousel({ images }) {
         <div className="carousel">
             <img src={images[currentIndex]} alt={`Image ${currentIndex}`} className="carousel-image" />
             <button className="carousel-button prev" onClick={goToPrevSlide}>
-            &lt;
+                &lt;
             </button>
             <button className="carousel-button next" onClick={goToNextSlide}>
-            &gt;
+                &gt;
             </button>
         </div>
     );

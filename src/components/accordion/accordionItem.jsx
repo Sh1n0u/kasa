@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import './accordion.scss';
-import img from '../../assets/chevron.png'
+import img from '../../assets/chevron.png';
 
 const AccordionItem = (props) => {
-    const { title, descriptions } = props; // Ajout de la prop "descriptions"
+    const { title, description } = props;
     const [open, setOpen] = useState(false);
     const toggleAccordion = () => {
         setOpen(!open);
-    }
+    };
 
     return (
         <div className="accordion-item">
@@ -15,17 +15,16 @@ const AccordionItem = (props) => {
                 {title}
                 <span className={`chevron-icon ${open ? 'rotate' : ''}`} onClick={() => toggleAccordion()}>
                     <span className={`chevron-icon ${open ? 'rotate' : ''}`}>
-                        <img src={img} alt='icone du chevron' />
+                        <img src={img} alt="icone du chevron" />
                     </span>
                 </span>
             </div>
             <div className={`accordion-content ${open ? 'open' : ''}`}>
-                {descriptions.map((description, index) => (
-                    <p key={index}>{description}</p>
-                ))}
+                <p>{description}</p>
             </div>
         </div>
-    )
-}
+    );
+};
+
 
 export default AccordionItem;

@@ -6,8 +6,7 @@ function Error() {
     return (
         <div className="error">
             <h2>404</h2>
-            <p>Oups, tu a encore mis les doigts où il ne fallait pas !</p>
-            <img src={error}/>
+            <p>Oups, la page que vous avez demandez n'existe pas !</p>
         </div>
     )
 }

@@ -1,12 +1,11 @@
-import Banner from "../components/banner/banner"
-import Accordions from '../components/accordion/accordions'
-import React, { useEffect } from 'react'
-import bannerApropos from '../assets/bannerapropos.png'
+import Banner from '../components/banner/banner';
+import Accordions from '../components/accordion/accordions';
+import React, { useEffect } from 'react';
+import bannerApropos from '../assets/bannerapropos.png';
 
 function Apropos() {
-
     useEffect(() => {
-        document.title = "A propos";
+        document.title = 'A propos';
     }, []);
 
     return (
@@ -14,7 +13,7 @@ function Apropos() {
             <Banner img={bannerApropos} />
             <Accordions />
         </div>
-    )
+    );
 }
 
-export default Apropos
+export default Apropos;

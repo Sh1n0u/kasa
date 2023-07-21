@@ -3,14 +3,15 @@ import { useParams } from 'react-router-dom';
 import data from '../../assets/logements.json';
 
 import './carddetail.scss';
-import '../accordion/accordion.scss'
+import '../accordion/accordion.scss';
 
 import Carousel from '../carousel/carousel';
-import Error from '../error/error'
+import Error from '../error/error';
 import AccordionItem from '../accordion/accordionItem';
 import Titre from '../titre/titre';
 import Tags from '../tags/tags';
-
+import Host from '../portrait/portrait';
+import Rating from '../ratting/rating';
 
 function CardDetails() {
     const { id } = useParams();
@@ -27,19 +28,29 @@ function CardDetails() {
     return (
         <div className="card-details">
             <Carousel images={selectedItem.pictures} />
-            <Titre key={selectedItem.id} title={selectedItem.title} location={selectedItem.location}/>
-            <Tags tags={selectedItem.tags} />
-            <div className='accordion-container description-item'>
-                <AccordionItem key={selectedItem.id} title="Description" descriptions={[selectedItem.description]}/>
-                <AccordionItem key={selectedItem.id} title="Equipement" descriptions={[selectedItem.equipments]}/>
+            <div className="card-info">
+                <div>
+                    <Titre key={selectedItem.id} title={selectedItem.title} location={selectedItem.location} />
+                    <Tags tags={selectedItem.tags} />
+                </div>
+                <div className='host-rating'>
+                    <Host name={selectedItem.host.name} picture={selectedItem.host.picture} />
+                    <Rating rating={selectedItem.rating} />
+                </div>
             </div>
 
+            <div className="accordion-container description-item">
+                <AccordionItem key={selectedItem.id} title="Description" description={selectedItem.description} />
+                <AccordionItem
+                    key={selectedItem.id}
+                    title="Equipement"
+                    description={selectedItem.equipments.map((item, index) => (
+                        <p key={index}>{item}</p>
+                    ))}
+                />
+            </div>
         </div>
     );
 }
 
 export default CardDetails;
-
-
-            {/*<Portrait />
-            <Tag /> */}

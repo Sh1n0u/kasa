@@ -1,9 +1,4 @@
 .card-details {
-    margin: 0px 50px 0px 50px;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 8px;
-
     .description-item {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -12,8 +7,20 @@
         max-width: 1700px;
         column-gap: 50px;
 
-        > * {
+        >* {
             flex: 1;
         }
+    }
+
+    .card-info {
+        display: flex;
+        margin: auto;
+        width: 90%;
+        justify-content: space-between;
+
+    }
+
+    .host-rating {
+        width: 180px;
     }
 }

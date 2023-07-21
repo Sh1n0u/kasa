@@ -22,9 +22,10 @@
       .accordion-content {
         background-color: #F6F6F6;
         border-radius: 0px 0px 10px 10px;
-        max-height: 0;
+        max-height: 0px;
         overflow: hidden;
         transition: max-height 0.3s ease-in-out;
+
 
         &.open {
           max-height: 500px;
@@ -36,6 +37,7 @@
           padding: 20px;
           font-family: 'Montserrat';
           font-size: 18px;
+          height: auto;
         }
       }
 

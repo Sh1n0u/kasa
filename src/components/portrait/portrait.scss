@@ -1,0 +1,22 @@
+.portrait-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+
+    h2 {
+        font-weight: 500;
+        font-size: 18px;
+        color: #FF6068;
+        font-family: 'Montserrat';
+        text-align: end;
+    }
+
+    img {
+        border-radius: 50%;
+        margin: 5px;
+        width: 64px;
+        height: 64px;
+    }
+}
