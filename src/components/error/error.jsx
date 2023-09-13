@@ -1,6 +1,5 @@
 import React from "react"
 import './error.scss'
-import error from '../../assets/error.png'
 
 function Error() {
     return (

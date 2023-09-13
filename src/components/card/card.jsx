@@ -19,8 +19,8 @@ function Card() {
 export default Card;
 
 
-export function CardContent({ match }) {
-    return (
-        <div className="card-container"></div>
-    );
-}
+// export function CardContent({ match }) {
+//     return (
+//         <div className="card-container"></div>
+//     );
+// }
