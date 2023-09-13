@@ -16,13 +16,17 @@ function Carousel({ images }) {
 
     return (
         <div className="carousel">
-            <img src={images[currentIndex]} alt={`Image ${currentIndex}`} className="carousel-image" />
+            {/* eslint-disable-next-line */}
+            <img src={images[currentIndex]} alt={`Image de ${currentIndex}`} className="carousel-image" />
             <button className="carousel-button prev" onClick={goToPrevSlide}>
                 &lt;
             </button>
             <button className="carousel-button next" onClick={goToNextSlide}>
                 &gt;
             </button>
+            <div className="image-indicator">
+                {currentIndex + 1}/{images.length}
+            </div>
         </div>
     );
 }
