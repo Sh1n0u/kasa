@@ -5,7 +5,7 @@ const Host = ({ name, picture }) => {
     return (
         <div className='portrait-container'>
             <h2>{name}</h2>
-            <img src={picture} alt="Photo de l'hôte" />
+            <img src={picture} alt={name} />
         </div>
     );
 };
