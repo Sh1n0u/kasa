@@ -9,6 +9,7 @@
 
 }
 
+
 .navbar {
     width: 309px;
     height: 34px;
@@ -28,5 +29,27 @@
 
     a:visited {
         color: #FF6068;
+    }
+}
+
+@media all and (max-width: 768px) and (min-width: 375px) {
+    .header {
+        width: 100%;
+        padding: 0;
+
+        .navbar {
+            width: 100%;
+            padding: 0px;
+            align-items: center;
+
+            li {
+                padding-left: 10px;
+            }
+        }
+
+        img {
+            width: 140px;
+        }
+
     }
 }

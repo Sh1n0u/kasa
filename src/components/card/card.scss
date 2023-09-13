@@ -14,7 +14,7 @@
     width: calc(25.33% - 16px);
     background: linear-gradient(to bottom, #FF6068, rgb(197, 56, 63));
     border-radius: 10px;
-    height: 334px;
+    max-height: 334px;
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -40,4 +40,16 @@ p {
 
 a:link {
     text-decoration: none;
+}
+
+@media all and (max-width: 768px) and (min-width: 375px) {
+    .card-container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+        .card {
+            width: auto;
+            max-height: 90%;
+        }
+    }
 }

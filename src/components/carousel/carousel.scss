@@ -25,7 +25,6 @@
         border: none;
         cursor: pointer;
 
-
         &:hover {
             opacity: 0.8;
         }
@@ -36,6 +35,25 @@
 
         &.next {
             right: 10px;
+        }
+    }
+
+    .image-indicator {
+        font-size: 16px;
+        color: white;
+        font-weight: bold;
+        font-family: 'Montserrat';
+
+        position: absolute;
+        bottom: 2%;
+        left: 50%;
+    }
+}
+
+@media all and (max-width: 768px) and (min-width: 375px) {
+    .carousel {
+        .image-indicator {
+            display: none;
         }
     }
 }
